@@ -17,20 +17,25 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>第一篇测试 | Hexo</title>
-  <meta name="description" content="1、fbx文件不能引用 png和tga贴图除了 “Assets&#x2F;GameAssets&#x2F;scene&#x2F;materials&#x2F;noname.png”   2、独立语言翻译后场景prefab不能引用未翻译的贴图资源或者其它多语言目录的场景资源贴图 例如，zh，简体中文翻译的 Assets\GameAssets\language\zh\scene\pj-g_scene_prefab 下的prefab不能引用">
+  <title>Hexo</title>
+  <meta name="description" content="移动经多次观察flappy bird游戏后得出：   有一个固定的重力，但下降有最大速度  点击屏幕把Y速度变成一个向上的固定速度，不叠加  飞到最高点时，把Y速度变成0 地图固定速度向左移动，鸟的X坐标固定    碰撞检测鹄羹（鸟） 加一些碰撞检查点，手动摆的。   与管道碰撞 取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇测试">
-<meta property="og:url" content="http://example.com/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:title" content="麦兜&#39;s Blog">
+<meta property="og:url" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="麦兜&#39;s Blog">
-<meta property="og:description" content="1、fbx文件不能引用 png和tga贴图除了 “Assets&#x2F;GameAssets&#x2F;scene&#x2F;materials&#x2F;noname.png”   2、独立语言翻译后场景prefab不能引用未翻译的贴图资源或者其它多语言目录的场景资源贴图 例如，zh，简体中文翻译的 Assets\GameAssets\language\zh\scene\pj-g_scene_prefab 下的prefab不能引用">
+<meta property="og:description" content="移动经多次观察flappy bird游戏后得出：   有一个固定的重力，但下降有最大速度  点击屏幕把Y速度变成一个向上的固定速度，不叠加  飞到最高点时，把Y速度变成0 地图固定速度向左移动，鸟的X坐标固定    碰撞检测鹄羹（鸟） 加一些碰撞检查点，手动摆的。   与管道碰撞 取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-09T08:21:46.000Z">
-<meta property="article:modified_time" content="2021-03-09T08:23:09.825Z">
+<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/ed1b7b628709a07b532d34eeef6ee37a.png">
+<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/f4ce92939a1f41eb79bbb822fdf95d88.png">
+<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/fcf15a5971106d7b7a3cbdf239ab43df.png">
+<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/fc41292c01e8bce594e66f48562e853e.png">
+<meta property="article:published_time" content="2021-03-09T09:44:33.777Z">
+<meta property="article:modified_time" content="2021-03-09T09:44:33.778Z">
 <meta property="article:author" content="麦兜">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/ed1b7b628709a07b532d34eeef6ee37a.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/index.html">
+  <link rel="canonical" href="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/index.html">
   
     <link rel="alternate" href="/atom.xml" title="麦兜&#39;s Blog" type="application/atom+xml">
   
@@ -289,23 +294,15 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-第一篇测试" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-飞越九天 技术方案/飞越九天 技术方案" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
-      
-        
-  
-    <h1 class="article-title" itemprop="name">
-      第一篇测试
-    </h1>
-  
-
       
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/" class="article-date">
-	  <time datetime="2021-03-09T08:21:46.000Z" itemprop="datePublished">2021-03-09</time>
+	<a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" class="article-date">
+	  <time datetime="2021-03-09T09:44:33.777Z" itemprop="datePublished">2021-03-09</time>
 	</a>
 </span>
         
@@ -320,39 +317,50 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h2 id="1、fbx文件不能引用-png和tga贴图"><a href="#1、fbx文件不能引用-png和tga贴图" class="headerlink" title="1、fbx文件不能引用 png和tga贴图"></a>1、fbx文件不能引用 png和tga贴图</h2><p>除了 “Assets/GameAssets/scene/materials/noname.png”</p>
-<br/>
-
-<h2 id="2、独立语言翻译后场景prefab不能引用未翻译的贴图资源或者其它多语言目录的场景资源贴图"><a href="#2、独立语言翻译后场景prefab不能引用未翻译的贴图资源或者其它多语言目录的场景资源贴图" class="headerlink" title="2、独立语言翻译后场景prefab不能引用未翻译的贴图资源或者其它多语言目录的场景资源贴图"></a>2、独立语言翻译后场景prefab不能引用未翻译的贴图资源或者其它多语言目录的场景资源贴图</h2><ol>
-<li>例如，zh，简体中文翻译的 Assets\GameAssets\language\zh\scene\pj-g_scene_prefab 下的prefab不能引用</li>
+        <h1 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h1><p>经多次观察flappy bird游戏后得出：</p>
+<ol>
+<li> 有一个固定的重力，但下降有最大速度</li>
+<li> 点击屏幕把Y速度变成一个向上的固定速度，不叠加</li>
+<li> 飞到最高点时，把Y速度变成0</li>
+<li>地图固定速度向左移动，鸟的X坐标固定</li>
 </ol>
-<p>tw，繁体中文翻译的 Assets\GameAssets\language\tw\scene\pj-g_scene_assets\ 目录下的贴图</p>
-<ol start="2">
-<li>如果 Assets\GameAssets\language\zh\scene\pj-g_scene_assets\  中存在已翻译的贴图</li>
+<br/>
+
+<h1 id="碰撞检测"><a href="#碰撞检测" class="headerlink" title="碰撞检测"></a>碰撞检测</h1><h2 id="鹄羹（鸟）"><a href="#鹄羹（鸟）" class="headerlink" title="鹄羹（鸟）"></a>鹄羹（鸟）</h2><p><img src="ed1b7b628709a07b532d34eeef6ee37a.png" alt="截图"></p>
+<p>加一些碰撞检查点，手动摆的。</p>
+<br/>
+
+<h2 id="与管道碰撞"><a href="#与管道碰撞" class="headerlink" title="与管道碰撞"></a>与管道碰撞</h2><p><img src="f4ce92939a1f41eb79bbb822fdf95d88.png" alt="截图"></p>
+<p>取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查点。</p>
+<p>（大致是这样，其实没这么短）</p>
+<br/>
+
+<h2 id="与得分道具碰撞"><a href="#与得分道具碰撞" class="headerlink" title="与得分道具碰撞"></a>与得分道具碰撞</h2><p><img src="fcf15a5971106d7b7a3cbdf239ab43df.png" alt="截图"></p>
+<p>循环检测鸟的碰撞检查点，判断检查点与这圆心的距离是否小于半径。</p>
+<br/>
+
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p><img src="fc41292c01e8bce594e66f48562e853e.png" alt="截图"></p>
+<p>在鹄羹（鸟）横坐标有重合的物体才检测碰撞</p>
+<br/>
+
+<h1 id="管道地图拼接"><a href="#管道地图拼接" class="headerlink" title="管道地图拼接"></a>管道地图拼接</h1><p>前提：地图要给策划配好</p>
+<ol>
+<li>策划配地图块</li>
+<li>每一块地图块的右边缘距离屏幕个中心点一定距离（正数）时，开始加载下一张地图，并重置管道位置，重置加分道具。</li>
+<li>每一块地图块的右边缘距离屏幕个中心点一定距离（负数）时，隐藏这一张地图</li>
+<li>同一个地图块不能连续出现</li>
 </ol>
-<p>则不能引用通用目录下 Assets\GameAssets\scene\pj-g_scene_assets\  下未翻译的同名贴图</p>
 <br/>
 
-<h2 id="3、场景预制物里面的节点中的renderer组件-设置的-order-in-layer-（sorting-order属性）必须为0"><a href="#3、场景预制物里面的节点中的renderer组件-设置的-order-in-layer-（sorting-order属性）必须为0" class="headerlink" title="3、场景预制物里面的节点中的renderer组件 设置的 order in layer （sorting order属性）必须为0"></a>3、场景预制物里面的节点中的renderer组件 设置的 order in layer （sorting order属性）必须为0</h2><br/>
-
-<h2 id="4、-场景预制不能引用自身目录-scene-以外的资源"><a href="#4、-场景预制不能引用自身目录-scene-以外的资源" class="headerlink" title="4、 场景预制不能引用自身目录[scene/]以外的资源"></a>4、 场景预制不能引用自身目录[scene/]以外的资源</h2><p>除了effect、shaders、Scripts、ThirdParty、font 目录的</p>
-<p>否则被引用的资源在打ab时会重复</p>
-<br/>
-
-<h2 id="5、不能挂以下组件"><a href="#5、不能挂以下组件" class="headerlink" title="5、不能挂以下组件"></a>5、不能挂以下组件</h2><p>Canvas、SortingGroup、SpriteMask、Toggle、ToggleAdapter</p>
-<br/>
-
-<h2 id="6、不能挂Unity自带的shader"><a href="#6、不能挂Unity自带的shader" class="headerlink" title="6、不能挂Unity自带的shader"></a>6、不能挂Unity自带的shader</h2><br/>
-
-<h2 id="7、不能引用BigBg"><a href="#7、不能引用BigBg" class="headerlink" title="7、不能引用BigBg"></a>7、不能引用BigBg</h2><br/>
-
-<h2 id="8、-场景资源不能引用materials-dynload目录下的材质球"><a href="#8、-场景资源不能引用materials-dynload目录下的材质球" class="headerlink" title="8、 场景资源不能引用materials_dynload目录下的材质球"></a>8、 场景资源不能引用materials_dynload目录下的材质球</h2><p>此目录下的材质球用于动态加载</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ol>
+<li> 使用 UpdateBeat，调用lua的update去每帧处理事件。</li>
+</ol>
 
       
     </div>
@@ -362,7 +370,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/" title="第一篇测试" target="_blank" rel="external">http://example.com/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/</a>
+      <a href="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" title="" target="_blank" rel="external">http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -408,13 +416,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2021/03/09/hello-world/" title="Hello World"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" title="(no title)"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
