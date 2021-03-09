@@ -17,25 +17,25 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hexo</title>
-  <meta name="description" content="移动经多次观察flappy bird游戏后得出：   有一个固定的重力，但下降有最大速度  点击屏幕把Y速度变成一个向上的固定速度，不叠加  飞到最高点时，把Y速度变成0 地图固定速度向左移动，鸟的X坐标固定    碰撞检测鹄羹（鸟） 加一些碰撞检查点，手动摆的。   与管道碰撞 取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查">
+  <title>Unity资源各种ID解析 | Hexo</title>
+  <meta name="description" content="File Guid（guid）unity上，每个文件都会有一个File Guid（guid），记录在meta文件上，作为这个文件的唯一标识  例如，如果一个资源引用了另一个外部资源，比如一个Prefab引用了其他脚本、纹理或Prefab等，则一定会标明引用资源文件的File GUID。  Local IDLocal ID表示的就是文件内部各对象之间的关系，打开一个*.Prefab文件可以很清晰的看">
 <meta property="og:type" content="article">
-<meta property="og:title" content="麦兜&#39;s Blog">
-<meta property="og:url" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:title" content="Unity资源各种ID解析">
+<meta property="og:url" content="http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="麦兜&#39;s Blog">
-<meta property="og:description" content="移动经多次观察flappy bird游戏后得出：   有一个固定的重力，但下降有最大速度  点击屏幕把Y速度变成一个向上的固定速度，不叠加  飞到最高点时，把Y速度变成0 地图固定速度向左移动，鸟的X坐标固定    碰撞检测鹄羹（鸟） 加一些碰撞检查点，手动摆的。   与管道碰撞 取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查">
+<meta property="og:description" content="File Guid（guid）unity上，每个文件都会有一个File Guid（guid），记录在meta文件上，作为这个文件的唯一标识  例如，如果一个资源引用了另一个外部资源，比如一个Prefab引用了其他脚本、纹理或Prefab等，则一定会标明引用资源文件的File GUID。  Local IDLocal ID表示的就是文件内部各对象之间的关系，打开一个*.Prefab文件可以很清晰的看">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/flappy/ed1b7b628709a07b532d34eeef6ee37a.png">
-<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/flappy/f4ce92939a1f41eb79bbb822fdf95d88.png">
-<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/flappy/fcf15a5971106d7b7a3cbdf239ab43df.png">
-<meta property="og:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/flappy/fc41292c01e8bce594e66f48562e853e.png">
-<meta property="article:published_time" content="2021-03-09T09:44:33.777Z">
-<meta property="article:modified_time" content="2021-03-09T09:46:16.906Z">
+<meta property="og:image" content="http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/bf28b7ce15f50433d73930fcf6835e6f.png">
+<meta property="og:image" content="http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/34ee80be6d197331cf102dc5e2986261.png">
+<meta property="og:image" content="http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/f6dac319113ce7166d12242ea1e46b84.png">
+<meta property="article:published_time" content="2021-03-09T10:29:56.000Z">
+<meta property="article:modified_time" content="2021-03-09T10:30:49.267Z">
 <meta property="article:author" content="麦兜">
+<meta property="article:tag" content="Unity">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/flappy/ed1b7b628709a07b532d34eeef6ee37a.png">
+<meta name="twitter:image" content="http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/bf28b7ce15f50433d73930fcf6835e6f.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/index.html">
+  <link rel="canonical" href="http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/index.html">
   
     <link rel="alternate" href="/atom.xml" title="麦兜&#39;s Blog" type="application/atom+xml">
   
@@ -201,15 +201,29 @@
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" rel="tag">hexo常见错误</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/" rel="tag">开发记录</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%A6%E5%8F%B7%E8%A1%A8/" rel="tag">符号表</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Unity/" style="font-size: 13px;">Unity</a> <a href="/tags/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" style="font-size: 13px;">hexo常见错误</a> <a href="/tags/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/" style="font-size: 13px;">开发记录</a> <a href="/tags/%E7%AC%A6%E5%8F%B7%E8%A1%A8/" style="font-size: 13px;">符号表</a>
+    </div>
+  </div>
+
     
       
   <div class="widget">
     <h3 class="widget-title">Archive</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -228,10 +242,10 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" class="title">(no title)</a>
+                <a href="/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/" class="title">Unity资源各种ID解析</a>
               </p>
               <p class="item-date">
-                <time datetime="2021-03-09T09:44:33.777Z" itemprop="datePublished">2021-03-09</time>
+                <time datetime="2021-03-09T10:29:56.000Z" itemprop="datePublished">2021-03-09</time>
               </p>
             </div>
           </li>
@@ -243,10 +257,10 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" class="title">(no title)</a>
+                <a href="/2021/03/09/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" class="title">hexo常见错误</a>
               </p>
               <p class="item-date">
-                <time datetime="2021-03-09T09:44:33.777Z" itemprop="datePublished">2021-03-09</time>
+                <time datetime="2021-03-09T10:18:59.000Z" itemprop="datePublished">2021-03-09</time>
               </p>
             </div>
           </li>
@@ -258,10 +272,25 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/" class="title">第一篇测试</a>
+                <a href="/2021/03/09/%E5%AE%89%E5%8D%93%E7%AC%A6%E5%8F%B7%E8%A1%A8/" class="title">安卓符号表</a>
               </p>
               <p class="item-date">
-                <time datetime="2021-03-09T08:21:46.000Z" itemprop="datePublished">2021-03-09</time>
+                <time datetime="2021-03-09T10:14:16.000Z" itemprop="datePublished">2021-03-09</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/" class="title">FlappyBird设计</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-03-09T10:08:52.000Z" itemprop="datePublished">2021-03-09</time>
               </p>
             </div>
           </li>
@@ -294,19 +323,32 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-飞越九天 技术方案" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Unity资源各种ID解析" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Unity资源各种ID解析
+    </h1>
+  
+
       
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" class="article-date">
-	  <time datetime="2021-03-09T09:44:33.777Z" itemprop="datePublished">2021-03-09</time>
+	<a href="/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/" class="article-date">
+	  <time datetime="2021-03-09T10:29:56.000Z" itemprop="datePublished">2021-03-09</time>
 	</a>
 </span>
         
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/Unity/" rel="tag">Unity</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -317,50 +359,23 @@
 	</span>
 
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h1><p>经多次观察flappy bird游戏后得出：</p>
-<ol>
-<li> 有一个固定的重力，但下降有最大速度</li>
-<li> 点击屏幕把Y速度变成一个向上的固定速度，不叠加</li>
-<li> 飞到最高点时，把Y速度变成0</li>
-<li>地图固定速度向左移动，鸟的X坐标固定</li>
-</ol>
+        <h1 id="File-Guid（guid）"><a href="#File-Guid（guid）" class="headerlink" title="File Guid（guid）"></a>File Guid（guid）</h1><p>unity上，每个文件都会有一个File Guid（guid），记录在meta文件上，作为这个文件的唯一标识</p>
+<p><img src="bf28b7ce15f50433d73930fcf6835e6f.png"></p>
+<p>例如，如果一个资源引用了另一个外部资源，比如一个Prefab引用了其他脚本、纹理或Prefab等，则一定会标明引用资源文件的File GUID。</p>
+<p><img src="34ee80be6d197331cf102dc5e2986261.png"></p>
+<h1 id="Local-ID"><a href="#Local-ID" class="headerlink" title="Local ID"></a>Local ID</h1><p>Local ID表示的就是文件内部各对象之间的关系，打开一个*.Prefab文件可以很清晰的看到：</p>
+<p><img src="f6dac319113ce7166d12242ea1e46b84.png"></p>
+<p>一个对象通常是由一个或多个对象构成，每个记录在&amp;符号后面的数字都是一个Local ID，每一个Local ID也表示这<strong>它将来也会被实例化成一个对象</strong>。也就是说，当一个prefab文件要实例化成一个GameObject时，它会自动尝试获取其内部Local ID所指的那个对象。如果这个所指的对象当前还没有被实例化出来，那么Unity会自动<strong>实例化</strong>这个对象，如此递归，直到所有涉及的对象都被实例化。</p>
 <br/>
 
-<h1 id="碰撞检测"><a href="#碰撞检测" class="headerlink" title="碰撞检测"></a>碰撞检测</h1><h2 id="鹄羹（鸟）"><a href="#鹄羹（鸟）" class="headerlink" title="鹄羹（鸟）"></a>鹄羹（鸟）</h2><p><img src="flappy/ed1b7b628709a07b532d34eeef6ee37a.png" alt="截图"></p>
-<p>加一些碰撞检查点，手动摆的。</p>
-<br/>
-
-<h2 id="与管道碰撞"><a href="#与管道碰撞" class="headerlink" title="与管道碰撞"></a>与管道碰撞</h2><p><img src="flappy/f4ce92939a1f41eb79bbb822fdf95d88.png" alt="截图"></p>
-<p>取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查点。</p>
-<p>（大致是这样，其实没这么短）</p>
-<br/>
-
-<h2 id="与得分道具碰撞"><a href="#与得分道具碰撞" class="headerlink" title="与得分道具碰撞"></a>与得分道具碰撞</h2><p><img src="flappy/fcf15a5971106d7b7a3cbdf239ab43df.png" alt="截图"></p>
-<p>循环检测鸟的碰撞检查点，判断检查点与这圆心的距离是否小于半径。</p>
-<br/>
-
-<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p><img src="flappy/fc41292c01e8bce594e66f48562e853e.png" alt="截图"></p>
-<p>在鹄羹（鸟）横坐标有重合的物体才检测碰撞</p>
-<br/>
-
-<h1 id="管道地图拼接"><a href="#管道地图拼接" class="headerlink" title="管道地图拼接"></a>管道地图拼接</h1><p>前提：地图要给策划配好</p>
-<ol>
-<li>策划配地图块</li>
-<li>每一块地图块的右边缘距离屏幕个中心点一定距离（正数）时，开始加载下一张地图，并重置管道位置，重置加分道具。</li>
-<li>每一块地图块的右边缘距离屏幕个中心点一定距离（负数）时，隐藏这一张地图</li>
-<li>同一个地图块不能连续出现</li>
-</ol>
-<br/>
-
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ol>
-<li> 使用 UpdateBeat，调用lua的update去每帧处理事件。</li>
-</ol>
+<h1 id="Instance-ID"><a href="#Instance-ID" class="headerlink" title="Instance ID"></a>Instance ID</h1><p>Unity通过Instance ID，来获取或判断一个对象是否已经被加载完毕。Instance ID由File GUID和Local ID转换而成，可以简单理解成是记录了资源所在内存地址的写着数字的钥匙牌。</p>
+<p>Unity会在项目启动后，创建并一直维护一张“映射表”，这张映射表记录的就是File GUID、Local ID以及由它们转换而成的Instance ID之间的关系，这样下次在请求资源时就可以快速的通过查看钥匙牌来获取资源了。</p>
 
       
     </div>
@@ -370,7 +385,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" title="" target="_blank" rel="external">http://example.com/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/</a>
+      <a href="http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/" title="Unity资源各种ID解析" target="_blank" rel="external">http://example.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -416,13 +431,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2021/03/09/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/%E9%A3%9E%E8%B6%8A%E4%B9%9D%E5%A4%A9%20%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2021/03/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/" title="第一篇测试"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2021/03/09/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" title="hexo常见错误"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
