@@ -17,26 +17,16 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>FlappyBird设计 | 麦兜&#39;s Blog</title>
-  <meta name="description" content="移动经多次观察flappy bird游戏后得出：   有一个固定的重力，但下降有最大速度  点击屏幕把Y速度变成一个向上的固定速度，不叠加  飞到最高点时，把Y速度变成0  地图固定速度向左移动，鸟的X坐标固定    碰撞检测鹄羹（鸟） 加一些碰撞检查点，手动摆的。   与管道碰撞 取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检">
-<meta property="og:type" content="article">
-<meta property="og:title" content="FlappyBird设计">
-<meta property="og:url" content="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/index.html">
+  <title>Tag: 资源管理 | 麦兜&#39;s Blog</title>
+  <meta property="og:type" content="website">
+<meta property="og:title" content="麦兜&#39;s Blog">
+<meta property="og:url" content="http://example.com/tags/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="麦兜&#39;s Blog">
-<meta property="og:description" content="移动经多次观察flappy bird游戏后得出：   有一个固定的重力，但下降有最大速度  点击屏幕把Y速度变成一个向上的固定速度，不叠加  飞到最高点时，把Y速度变成0  地图固定速度向左移动，鸟的X坐标固定    碰撞检测鹄羹（鸟） 加一些碰撞检查点，手动摆的。   与管道碰撞 取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/1.png">
-<meta property="og:image" content="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/2.png">
-<meta property="og:image" content="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/3.png">
-<meta property="og:image" content="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/4.png">
-<meta property="article:published_time" content="2021-03-09T10:08:52.000Z">
-<meta property="article:modified_time" content="2021-03-09T12:35:38.257Z">
 <meta property="article:author" content="麦兜">
-<meta property="article:tag" content="小游戏开发">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/1.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/index.html">
+  <link rel="canonical" href="http://example.com/tags/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/index.html">
   
     <link rel="alternate" href="/atom.xml" title="麦兜&#39;s Blog" type="application/atom+xml">
   
@@ -324,221 +314,62 @@
 </aside>
 
   
-  
-<main class="main" role="main">
-  <div class="content">
-  <article id="post-FlappyBird设计" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <main class="main" role="main">
+  <article class="content article article-tags post-type-list" itemscope="">
+    <header class="article-header">
+      <h1 itemprop="name" class="hidden-xs">Tag: 资源管理</h1>
+      <p class="text-muted hidden-xs">Total 1 articles</p>
+      <nav role="navigation" id="nav-main" class="okayNav">
+        <ul>
+          <li><a href="/tags">All</a></li>
+          
+          <li><a href="/tags/小游戏开发/">小游戏开发</a></li>
+          
+          <li><a href="/tags/Unity/">Unity</a></li>
+          
+          <li><a href="/tags/资源管理/">资源管理</a></li>
+          
+          <li><a href="/tags/hexo常见错误/">hexo常见错误</a></li>
+          
+          <li><a href="/tags/符号表/">符号表</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!-- /header -->
+    <div class="article-body">
+      <div class="row">
+        
+<div class="col-md-6">
     
-    <div class="article-header">
-      
-        
-  
-    <h1 class="article-title" itemprop="name">
-      FlappyBird设计
-    </h1>
-  
-
-      
-      <div class="article-meta">
-        <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/" class="article-date">
-	  <time datetime="2021-03-09T10:08:52.000Z" itemprop="datePublished">2021-03-09</time>
-	</a>
-</span>
-        
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/">开发记录</a>
-  </span>
-
-        
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/" rel="tag">小游戏开发</a>
-  </span>
-
-
-        
-	<span class="article-read hidden-xs">
-	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
-	    <span id="busuanzi_container_page_pv">
-			<span id="busuanzi_value_page_pv">0</span>
-		</span>
-	</span>
-
-
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/#comments" class="article-comment-link">Comments</a></span>
-        
-      </div>
-    </div>
-    <div class="article-entry marked-body" itemprop="articleBody">
-      
-        <h1 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h1><p>经多次观察flappy bird游戏后得出：</p>
-<ol>
-<li> 有一个固定的重力，但下降有最大速度</li>
-<li> 点击屏幕把Y速度变成一个向上的固定速度，不叠加</li>
-<li> 飞到最高点时，把Y速度变成0</li>
-<li> 地图固定速度向左移动，鸟的X坐标固定</li>
-</ol>
-<br/>
-
-<h1 id="碰撞检测"><a href="#碰撞检测" class="headerlink" title="碰撞检测"></a>碰撞检测</h1><h2 id="鹄羹（鸟）"><a href="#鹄羹（鸟）" class="headerlink" title="鹄羹（鸟）"></a>鹄羹（鸟）</h2><p><img src="1.png"></p>
-<p>加一些碰撞检查点，手动摆的。</p>
-<br/>
-
-<h2 id="与管道碰撞"><a href="#与管道碰撞" class="headerlink" title="与管道碰撞"></a>与管道碰撞</h2><p><img src="2.png"></p>
-<p>取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查点。</p>
-<p>（大致是这样，其实没这么短）</p>
-<br/>
-
-<h2 id="与得分道具碰撞"><a href="#与得分道具碰撞" class="headerlink" title="与得分道具碰撞"></a>与得分道具碰撞</h2><p><img src="3.png"></p>
-<p>循环检测鸟的碰撞检查点，判断检查点与这圆心的距离是否小于半径。</p>
-<br/>
-
-<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p><img src="4.png"></p>
-<p>在鹄羹（鸟）横坐标有重合的物体才检测碰撞</p>
-<br/>
-
-<h1 id="管道地图拼接"><a href="#管道地图拼接" class="headerlink" title="管道地图拼接"></a>管道地图拼接</h1><p>前提：地图要给策划配好</p>
-<ol>
-<li>策划配地图块</li>
-<li>每一块地图块的右边缘距离屏幕个中心点一定距离（正数）时，开始加载下一张地图，并重置管道位置，重置加分道具。</li>
-<li>每一块地图块的右边缘距离屏幕个中心点一定距离（负数）时，隐藏这一张地图</li>
-<li>同一个地图块不能连续出现</li>
-</ol>
-<br/>
-
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ol>
-<li> 使用 UpdateBeat，调用lua的update去每帧处理事件。</li>
-</ol>
-
-      
-    </div>
-    <div class="article-footer">
-      <blockquote class="mt-2x">
-  <ul class="post-copyright list-unstyled">
-    
-    <li class="post-copyright-link hidden-xs">
-      <strong>本文链接：</strong>
-      <a href="http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/" title="FlappyBird设计" target="_blank" rel="external">http://example.com/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/</a>
-    </li>
-    
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-</blockquote>
-
-
-<div class="panel panel-default panel-badger">
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
-    <figure class="media">
-      <div class="media-left">
-        <a href="https://github.com/yongliangmai" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
-        </a>
-      </div>
-      <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/yongliangmai" target="_blank"><span class="text-dark">麦兜</span><small class="ml-1x">U3D开发</small></a></h3>
-        <div>食物语U3D开发。</div>
-      </div>
-    </figure>
-  </div>
+     <div class="article-meta">
+       <time datetime="2021-03-09T10:29:56.000Z" itemprop="datePublished">2021-03-09</time>
+     </div>
+     <h3 class="article-title" itemprop="name">
+       <a class="article-link" href="/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/">Unity资源各种ID解析</a>
+     </h3>
+   </div>
+   
+   <div class="panel-footer">
+     
+      <a href="/tags/Unity/" class="label label-default mb">Unity</a>
+     
+      <a href="/tags/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/" class="label label-default mb">资源管理</a>
+     
+     
+   </div>
+   
+</article>
+
+
 </div>
 
-
+      </div>
     </div>
   </article>
-  
-    
-  <section id="comments">
-  	
-      <div id="vcomments"></div>
-    
-  </section>
-
-
-  
-</div>
-
-  <nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-  
-  <ul class="pager pull-left">
-    
-    <li class="prev">
-      <a href="/2021/03/09/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" title="hexo常见错误"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
-    
-    
-    <li class="next">
-      <a href="/2021/03/09/hello-world/" title="Hexo 教程"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
-    </li>
-    
-    
-  </ul>
-  
-  
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>$</span></button>
-  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
-    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
-  </div> -->
-  
-  
-  <div class="bar-right">
-    
-    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
-    
-  </div>
-  </div>
-</nav>
-  
-<!-- Modal -->
-<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content donate">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <div class="modal-body">
-        <div class="donate-box">
-          <div class="donate-head">
-            <p>Maybe you could buy me a cup of coffee.</p>
-          </div>
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
-              <div class="donate-payimg">
-                <img src="/images/donate/alipayimg.png" alt="Scan Qrcode" title="Scan" />
-              </div>
-              <p class="text-muted mv">Scan this qrcode</p>
-              <p class="text-grey">Open alipay app scan this qrcode, buy me a coffee!</p>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
-              <div class="donate-payimg">
-                <img src="/images/donate/wechatpayimg.png" alt="Scan Qrcode" title="Scan" />
-              </div>
-              <p class="text-muted mv">Scan this qrcode</p>
-              <p class="text-grey">Open wechat app scan this qrcode, buy me a coffee!</p>
-            </div>
-          </div>
-          <div class="donate-footer">
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> alipay</a>
-              </li>
-              <li role="presentation" class="">
-                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> wechat payment</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+   
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -593,39 +424,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
-
-   
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-   
-    
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine"></script>
-  <script type="text/javascript">
-  var GUEST = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail,link';
-  meta = meta.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#vcomments',
-    verify: false,
-    notify: false,
-    appId: '',
-    appKey: '',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: meta,
-    pageSize: '10' || 10,
-    visitor: false
-  });
-  </script>
-
-     
 
 
 
