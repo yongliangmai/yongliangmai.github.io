@@ -21,31 +21,31 @@
   <meta name="description" content="1、问题描述提交记录 7e9d6275da88a87dbd69e42f17f20174f4af5d9b  这图片，原本ios的压缩格式是 RGBA32 （meta显示 textureFormat: 4） 代码在OnPreprocessTexture处设置了正确的格式这几处打log，输出 导入unity，刷新资源后，unity显示  但meta文件没发生变化！    2、后果用安卓格式的复现 ，打出">
 <meta property="og:type" content="article">
 <meta property="og:title" content="回滚旧贴图重新导入，meta文件不变">
-<meta property="og:url" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/index.html">
+<meta property="og:url" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/index.html">
 <meta property="og:site_name" content="麦兜&#39;s Blog">
 <meta property="og:description" content="1、问题描述提交记录 7e9d6275da88a87dbd69e42f17f20174f4af5d9b  这图片，原本ios的压缩格式是 RGBA32 （meta显示 textureFormat: 4） 代码在OnPreprocessTexture处设置了正确的格式这几处打log，输出 导入unity，刷新资源后，unity显示  但meta文件没发生变化！    2、后果用安卓格式的复现 ，打出">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/a55c0fee8265c51612d1bc6c5195785c.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/d2e97a3f5713c222f2152a0c2cb1898c.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/0d9cbdb8288ffdf4781d09f86490cae5.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/d83f5d94fb446ae52f756c22881340d9.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/03f88b774dbe8ac4b03954bfd0f7270f.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/ceb3edff997c4e13aaf179de7e6f229e.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/8d6b7e112240d75cdc5131ea05b26de8.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/2203b19507871ce2eb8cbf44ab50d8c3.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/109ed467ea37ac64ea03aec50d5fa4c0.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/4ac3bf26e7d22d6eee471f321a5a4942.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/6be7e6fa69f8b31bce4e721b7184b7cc.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/9c73c211d856831d635ad1bf7e6512d3.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/a55c0fee8265c51612d1bc6c5195785c.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/d2e97a3f5713c222f2152a0c2cb1898c.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/0d9cbdb8288ffdf4781d09f86490cae5.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/d83f5d94fb446ae52f756c22881340d9.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/03f88b774dbe8ac4b03954bfd0f7270f.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/ceb3edff997c4e13aaf179de7e6f229e.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/8d6b7e112240d75cdc5131ea05b26de8.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/2203b19507871ce2eb8cbf44ab50d8c3.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/109ed467ea37ac64ea03aec50d5fa4c0.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/4ac3bf26e7d22d6eee471f321a5a4942.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/6be7e6fa69f8b31bce4e721b7184b7cc.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/9c73c211d856831d635ad1bf7e6512d3.png">
 <meta property="article:published_time" content="2021-03-11T06:50:58.000Z">
 <meta property="article:modified_time" content="2021-03-11T06:54:09.442Z">
 <meta property="article:author" content="麦兜">
 <meta property="article:tag" content="Unity">
 <meta property="article:tag" content="资源管理">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/a55c0fee8265c51612d1bc6c5195785c.png">
+<meta name="twitter:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/a55c0fee8265c51612d1bc6c5195785c.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/index.html">
+  <link rel="canonical" href="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/index.html">
   
     <link rel="alternate" href="/atom.xml" title="麦兜&#39;s Blog" type="application/atom+xml">
   
@@ -431,7 +431,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/" title="回滚旧贴图重新导入，meta文件不变" target="_blank" rel="external">https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/</a>
+      <a href="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/" title="回滚旧贴图重新导入，meta文件不变" target="_blank" rel="external">https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/</a>
     </li>
     
     <li class="post-copyright-license">

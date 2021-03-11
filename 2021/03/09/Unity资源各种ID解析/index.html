@@ -21,22 +21,22 @@
   <meta name="description" content="File Guid（guid）unity上，每个文件都会有一个File Guid（guid），记录在meta文件上，作为这个文件的唯一标识  例如，如果一个资源引用了另一个外部资源，比如一个Prefab引用了其他脚本、纹理或Prefab等，则一定会标明引用资源文件的File GUID。  Local IDLocal ID表示的就是文件内部各对象之间的关系，打开一个*.Prefab文件可以很清晰的看">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity资源各种ID解析">
-<meta property="og:url" content="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/index.html">
+<meta property="og:url" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/index.html">
 <meta property="og:site_name" content="麦兜&#39;s Blog">
 <meta property="og:description" content="File Guid（guid）unity上，每个文件都会有一个File Guid（guid），记录在meta文件上，作为这个文件的唯一标识  例如，如果一个资源引用了另一个外部资源，比如一个Prefab引用了其他脚本、纹理或Prefab等，则一定会标明引用资源文件的File GUID。  Local IDLocal ID表示的就是文件内部各对象之间的关系，打开一个*.Prefab文件可以很清晰的看">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/bf28b7ce15f50433d73930fcf6835e6f.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/34ee80be6d197331cf102dc5e2986261.png">
-<meta property="og:image" content="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/f6dac319113ce7166d12242ea1e46b84.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/bf28b7ce15f50433d73930fcf6835e6f.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/34ee80be6d197331cf102dc5e2986261.png">
+<meta property="og:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/f6dac319113ce7166d12242ea1e46b84.png">
 <meta property="article:published_time" content="2021-03-09T10:29:56.000Z">
 <meta property="article:modified_time" content="2021-03-11T06:53:22.542Z">
 <meta property="article:author" content="麦兜">
 <meta property="article:tag" content="Unity">
 <meta property="article:tag" content="资源管理">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/bf28b7ce15f50433d73930fcf6835e6f.png">
+<meta name="twitter:image" content="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/bf28b7ce15f50433d73930fcf6835e6f.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/index.html">
+  <link rel="canonical" href="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/index.html">
   
     <link rel="alternate" href="/atom.xml" title="麦兜&#39;s Blog" type="application/atom+xml">
   
@@ -399,7 +399,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/" title="Unity资源各种ID解析" target="_blank" rel="external">https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/</a>
+      <a href="https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/" title="Unity资源各种ID解析" target="_blank" rel="external">https://coding-pages-bucket-3534644-8449912-14185-528921-1301811423.cos-website.ap-hongkong.myqcloud.com/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/</a>
     </li>
     
     <li class="post-copyright-license">
