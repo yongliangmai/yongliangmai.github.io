@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>FlappyBird设计</title>
-    <url>/yongliangmai/yongliangmai.github.io/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/</url>
+    <url>/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<h1 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h1><p>经多次观察flappy bird游戏后得出：</p>
 <ol>
 <li> 有一个固定的重力，但下降有最大速度</li>
@@ -51,7 +51,7 @@
   </entry>
   <entry>
     <title>Unity资源各种ID解析</title>
-    <url>/yongliangmai/yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/</url>
+    <url>/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/</url>
     <content><![CDATA[<h1 id="File-Guid（guid）"><a href="#File-Guid（guid）" class="headerlink" title="File Guid（guid）"></a>File Guid（guid）</h1><p>unity上，每个文件都会有一个File Guid（guid），记录在meta文件上，作为这个文件的唯一标识</p>
 <p><img src="bf28b7ce15f50433d73930fcf6835e6f.png"></p>
 <p>例如，如果一个资源引用了另一个外部资源，比如一个Prefab引用了其他脚本、纹理或Prefab等，则一定会标明引用资源文件的File GUID。</p>
@@ -74,7 +74,7 @@
   </entry>
   <entry>
     <title>Hexo 教程</title>
-    <url>/yongliangmai/yongliangmai.github.io/2021/03/09/hello-world/</url>
+    <url>/2021/03/09/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -92,7 +92,7 @@
   </entry>
   <entry>
     <title>hexo常见错误</title>
-    <url>/yongliangmai/yongliangmai.github.io/2021/03/09/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</url>
+    <url>/2021/03/09/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<h1 id="1、can-not-read-a-block-mapping-entry"><a href="#1、can-not-read-a-block-mapping-entry" class="headerlink" title="1、can not read a block mapping entry"></a>1、can not read a block mapping entry</h1><p>md文件前面要有</p>
 <p><img src="1.png"></p>
 <p>这种属性，且设置属性后面要加空格</p>
@@ -107,7 +107,7 @@
   </entry>
   <entry>
     <title>符号表解析崩溃日志</title>
-    <url>/yongliangmai/yongliangmai.github.io/2021/03/09/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%A7%A3%E6%9E%90%E5%B4%A9%E6%BA%83%E6%97%A5%E5%BF%97/</url>
+    <url>/2021/03/09/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%A7%A3%E6%9E%90%E5%B4%A9%E6%BA%83%E6%97%A5%E5%BF%97/</url>
     <content><![CDATA[<h1 id="1、什么是符号表"><a href="#1、什么是符号表" class="headerlink" title="1、什么是符号表"></a>1、什么是符号表</h1><p>符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：<br>&lt;起始地址&gt; &lt;结束地址&gt; &lt;函数&gt; [&lt;文件名:行号&gt;]</p>
 <p>就大概是这个这样的东西<br><img src="image2021-1-25_18-15-14.png"></p>
 <h1 id="2、符号表的作用"><a href="#2、符号表的作用" class="headerlink" title="2、符号表的作用"></a>2、符号表的作用</h1><p>使用符号表可以对APP发生Crash的程序堆栈进行解析和还原，能为了能快速并准确地定位用户APP发生Crash的代码位置</p>
@@ -135,7 +135,7 @@
   </entry>
   <entry>
     <title>回滚旧贴图重新导入，meta文件不变</title>
-    <url>/yongliangmai/yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/</url>
+    <url>/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/</url>
     <content><![CDATA[<h1 id="1、问题描述"><a href="#1、问题描述" class="headerlink" title="1、问题描述"></a>1、问题描述</h1><p>提交记录 7e9d6275da88a87dbd69e42f17f20174f4af5d9b</p>
 <p><img src="a55c0fee8265c51612d1bc6c5195785c.png" alt="截图"></p>
 <p>这图片，原本ios的压缩格式是 RGBA32 （meta显示 textureFormat: 4）</p>
