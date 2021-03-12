@@ -106,34 +106,6 @@
       </tags>
   </entry>
   <entry>
-    <title>符号表解析崩溃日志</title>
-    <url>/2021/03/09/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%A7%A3%E6%9E%90%E5%B4%A9%E6%BA%83%E6%97%A5%E5%BF%97/</url>
-    <content><![CDATA[<h1 id="1、什么是符号表"><a href="#1、什么是符号表" class="headerlink" title="1、什么是符号表"></a>1、什么是符号表</h1><p>符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：<br>&lt;起始地址&gt; &lt;结束地址&gt; &lt;函数&gt; [&lt;文件名:行号&gt;]</p>
-<p>就大概是这个这样的东西<br><img src="image2021-1-25_18-15-14.png"></p>
-<h1 id="2、符号表的作用"><a href="#2、符号表的作用" class="headerlink" title="2、符号表的作用"></a>2、符号表的作用</h1><p>使用符号表可以对APP发生Crash的程序堆栈进行解析和还原，能为了能快速并准确地定位用户APP发生Crash的代码位置</p>
-<p><strong>解析前的崩溃堆栈：</strong></p>
-<p><img src="image2021-1-25_18-17-42.png"></p>
-<p><strong>解析后：</strong></p>
-<p><img src="image2021-1-25_18-17-53.png"></p>
-<h1 id="3、上传符号表"><a href="#3、上传符号表" class="headerlink" title="3、上传符号表"></a>3、上传符号表</h1><h2 id="3-1-IOS"><a href="#3-1-IOS" class="headerlink" title="3.1 IOS"></a>3.1 IOS</h2><p>ios的符号表文件就是dSYMs文件夹</p>
-<p>文件通常可以通过Xcode进行查看，Window -&gt; Organizer -&gt; Archives -&gt; 选择对应的Archives包 -&gt; Show in Finder -&gt; 选折对应的.xcarchive文件 -&gt; 显示包内容 -&gt; 打开dSYMs文件夹</p>
-<p>找到打成zip，再手动上传bugly，就可以了</p>
-<h2 id="3-2-安卓"><a href="#3-2-安卓" class="headerlink" title="3.2 安卓"></a>3.2 安卓</h2><p>下载bugly的工具</p>
-<p><a href="https://bugly.qq.com/docs/release-notes/release-android-symboltool/?v=20200622202242">Android 符号表工具</a></p>
-<p>阅读里面的使用指南符号表工具Android版-使用指南.pdf，（各个参数根据实际情况填）</p>
-<h1 id="4、-本地解析崩溃日志"><a href="#4、-本地解析崩溃日志" class="headerlink" title="4、 本地解析崩溃日志"></a>4、 本地解析崩溃日志</h1><p><a href="https://www.jianshu.com/p/c23a2c22ec5a">IOS本地解析崩溃堆栈</a></p>
-<p>安卓：命令行</p>
-<p>“E:/android-ndk-r13b-windows-x86_64/android-ndk-r13b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-addr2line.exe” -f -C -e “F:/ProjectG/pjg-client/AndroidProj/StagingArea/symbols/armeabi-v7a/libunity.sym.so” 00576c98&amp;exit</p>
-<p>（运行 arm-linux-androideabi-addr2line.exe， 参数 -f -C -e so路径  日志对应行的内存地址）<br>就会输出解析后的堆栈信息</p>
-]]></content>
-      <categories>
-        <category>其他</category>
-      </categories>
-      <tags>
-        <tag>符号表</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>回滚旧贴图重新导入，meta文件不变</title>
     <url>/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/</url>
     <content><![CDATA[<h1 id="1、问题描述"><a href="#1、问题描述" class="headerlink" title="1、问题描述"></a>1、问题描述</h1><p>提交记录 7e9d6275da88a87dbd69e42f17f20174f4af5d9b</p>
@@ -200,8 +172,31 @@
       </tags>
   </entry>
   <entry>
-    <title>Test</title>
-    <url>/2021/03/11/Test/</url>
-    <content><![CDATA[<h1 id="测试文档"><a href="#测试文档" class="headerlink" title="测试文档"></a>测试文档</h1>]]></content>
+    <title>符号表解析崩溃日志</title>
+    <url>/2021/03/09/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%A7%A3%E6%9E%90%E5%B4%A9%E6%BA%83%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<h1 id="1、什么是符号表"><a href="#1、什么是符号表" class="headerlink" title="1、什么是符号表"></a>1、什么是符号表</h1><p>符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：<br>&lt;起始地址&gt; &lt;结束地址&gt; &lt;函数&gt; [&lt;文件名:行号&gt;]</p>
+<p>就大概是这个这样的东西<br><img src="image2021-1-25_18-15-14.png"></p>
+<h1 id="2、符号表的作用"><a href="#2、符号表的作用" class="headerlink" title="2、符号表的作用"></a>2、符号表的作用</h1><p>使用符号表可以对APP发生Crash的程序堆栈进行解析和还原，能为了能快速并准确地定位用户APP发生Crash的代码位置</p>
+<p><strong>解析前的崩溃堆栈：</strong></p>
+<p><img src="image2021-1-25_18-17-42.png"></p>
+<p><strong>解析后：</strong></p>
+<p><img src="image2021-1-25_18-17-53.png"></p>
+<h1 id="3、上传符号表"><a href="#3、上传符号表" class="headerlink" title="3、上传符号表"></a>3、上传符号表</h1><h2 id="3-1-IOS"><a href="#3-1-IOS" class="headerlink" title="3.1 IOS"></a>3.1 IOS</h2><p>ios的符号表文件就是dSYMs文件夹</p>
+<p>文件通常可以通过Xcode进行查看，Window -&gt; Organizer -&gt; Archives -&gt; 选择对应的Archives包 -&gt; Show in Finder -&gt; 选折对应的.xcarchive文件 -&gt; 显示包内容 -&gt; 打开dSYMs文件夹</p>
+<p>找到打成zip，再手动上传bugly，就可以了</p>
+<h2 id="3-2-安卓"><a href="#3-2-安卓" class="headerlink" title="3.2 安卓"></a>3.2 安卓</h2><p>下载bugly的工具</p>
+<p><a href="https://bugly.qq.com/docs/release-notes/release-android-symboltool/?v=20200622202242">Android 符号表工具</a></p>
+<p>阅读里面的使用指南符号表工具Android版-使用指南.pdf，（各个参数根据实际情况填）</p>
+<h1 id="4、-本地解析崩溃日志"><a href="#4、-本地解析崩溃日志" class="headerlink" title="4、 本地解析崩溃日志"></a>4、 本地解析崩溃日志</h1><p><a href="https://www.jianshu.com/p/c23a2c22ec5a">IOS本地解析崩溃堆栈</a></p>
+<p>安卓：命令行</p>
+<p>“E:/android-ndk-r13b-windows-x86_64/android-ndk-r13b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-addr2line.exe” -f -C -e “F:/ProjectG/pjg-client/AndroidProj/StagingArea/symbols/armeabi-v7a/libunity.sym.so” 00576c98&amp;exit</p>
+<p>（运行 arm-linux-androideabi-addr2line.exe， 参数 -f -C -e so路径  日志对应行的内存地址）<br>就会输出解析后的堆栈信息</p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>符号表</tag>
+      </tags>
   </entry>
 </search>
