@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>麦兜&#39;s Blog</title>
+  
+  <subtitle>随便记记</subtitle>
+  <link href="https://yongliangmai.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://yongliangmai.github.io/"/>
+  <updated>2021-03-15T07:44:28.925Z</updated>
+  <id>https://yongliangmai.github.io/</id>
+  
+  <author>
+    <name>麦兜</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实用工具</title>
+    <link href="https://yongliangmai.github.io/2021/03/11/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    <id>https://yongliangmai.github.io/2021/03/11/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</id>
+    <published>2021-03-11T10:04:29.000Z</published>
+    <updated>2021-03-15T07:44:28.925Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="文件对比工具-：Beyond-Compare-4"><a href="#文件对比工具-：Beyond-Compare-4" class="headerlink" title="文件对比工具 ：Beyond Compare 4"></a>文件对比工具 ：Beyond Compare 4</h1><p><img src="1.png"> </p><h1 id="分析文件大小工具：JDiskReport"><a href="#分析文件大小工具：JDiskReport" class="headerlink" title="分析文件大小工具：JDiskReport"></a>分析文件大小工具：JDiskReport</h1><p><img src="2.png"> </p><h1 id="远程连接桌面：VNC-Viwer"><a href="#远程连接桌面：VNC-Viwer" class="headerlink" title="远程连接桌面：VNC Viwer"></a>远程连接桌面：VNC Viwer</h1><p>可以window连mac</p><h1 id="工具集合：uTools"><a href="#工具集合：uTools" class="headerlink" title="工具集合：uTools"></a>工具集合：uTools</h1><h1 id="Unity-Remote"><a href="#Unity-Remote" class="headerlink" title="Unity Remote"></a>Unity Remote</h1><p>Unity Remote 是一个帮助开发Android、iOS和tvOS项目的可下载小程序（app），有了它，可以方便的对Android、iOS平台的应用效果进行实时测试，而不需要每次都打包发布成apk文件、拷贝粘贴安装到移动平台后在实际应用中才能体验效果。这对于移动平台中使用各种传感器和手势动作等应用的项目来说，非常便捷有助。</p><h1 id="Android-Device-Monitor"><a href="#Android-Device-Monitor" class="headerlink" title="Android Device Monitor"></a>Android Device Monitor</h1><p>装android studio 后，可以独立打开这个看真机log的应用程序。</p><h1 id="爱思助手"><a href="#爱思助手" class="headerlink" title="爱思助手"></a>爱思助手</h1><p>玩ios手机文件用</p><p>工具箱里面挺多好东西</p><p>如崩溃日志，可以提取客户端崩溃日志，发给业支定位问题</p><p>实时日志：可以看ios实时运行日志，免去搞xcode或命令台等较麻烦的步骤。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;文件对比工具-：Beyond-Compare-4&quot;&gt;&lt;a href=&quot;#文件对比工具-：Beyond-Compare-4&quot; class=&quot;headerlink&quot; title=&quot;文件对比工具 ：Beyond Compare 4&quot;&gt;&lt;/a&gt;文件对比工具 ：Beyond</summary>
+      
+    
+    
+    
+    <category term="其他" scheme="https://yongliangmai.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="工具" scheme="https://yongliangmai.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>回滚旧贴图重新导入，meta文件不变</title>
+    <link href="https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/"/>
+    <id>https://yongliangmai.github.io/2021/03/11/%E5%9B%9E%E6%BB%9A%E6%97%A7%E8%B4%B4%E5%9B%BE%E9%87%8D%E6%96%B0%E5%AF%BC%E5%85%A5%EF%BC%8Cmeta%E6%96%87%E4%BB%B6%E4%B8%8D%E5%8F%98/</id>
+    <published>2021-03-11T06:50:58.000Z</published>
+    <updated>2021-03-11T06:54:09.442Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1、问题描述"><a href="#1、问题描述" class="headerlink" title="1、问题描述"></a>1、问题描述</h1><p>提交记录 7e9d6275da88a87dbd69e42f17f20174f4af5d9b</p><p><img src="a55c0fee8265c51612d1bc6c5195785c.png" alt="截图"></p><p>这图片，原本ios的压缩格式是 RGBA32 （meta显示 textureFormat: 4）</p><p>代码在OnPreprocessTexture处设置了正确的格式<br><img src="d2e97a3f5713c222f2152a0c2cb1898c.png" alt="截图"><br>这几处打log，输出<br><img src="0d9cbdb8288ffdf4781d09f86490cae5.png" alt="截图"></p><p>导入unity，刷新资源后，unity显示</p><p><img src="d83f5d94fb446ae52f756c22881340d9.png" alt="截图"></p><p>但meta文件没发生变化！</p><p><img src="03f88b774dbe8ac4b03954bfd0f7270f.png" alt="截图"></p><br/><h1 id="2、后果"><a href="#2、后果" class="headerlink" title="2、后果"></a>2、后果</h1><p>用安卓格式的复现<br><img src="ceb3edff997c4e13aaf179de7e6f229e.png" alt="截图"><br><img src="8d6b7e112240d75cdc5131ea05b26de8.png" alt="截图"></p><p>，打出ab<br><img src="2203b19507871ce2eb8cbf44ab50d8c3.png" alt="截图"><br>表现正常，没因为格式不同拆分图集。</p><p>但因为meta文件是错的！所以提交到git上的就是错误信息，不知道有没什么暗含坑，还是需要处理！</p><br/><h1 id="3、解决方法"><a href="#3、解决方法" class="headerlink" title="3、解决方法"></a>3、解决方法</h1><h2 id="3-1-手动reimport"><a href="#3-1-手动reimport" class="headerlink" title="3.1 手动reimport"></a>3.1 手动reimport</h2><br/><p>导入资源后，再对出问题的资源reimport</p><p><img src="109ed467ea37ac64ea03aec50d5fa4c0.png" alt="截图"></p><p>缺点：人工操作容易漏改。</p><br/><h2 id="3-2-改动导入贴图代码"><a href="#3-2-改动导入贴图代码" class="headerlink" title="3.2 改动导入贴图代码"></a>3.2 改动导入贴图代码</h2><p>在OnPostprocessTexture处，检查资源的meta文件，</p><p><img src="4ac3bf26e7d22d6eee471f321a5a4942.png" alt="截图"></p><p>这两处是否为 <code>textureFormat: 4</code></p><p>如果是，reimport一次该资源</p><p><code>AssetDatabase.ImportAsset(assetPath);</code></p><p>处理后，回滚出问题的图片效果：<br><img src="6be7e6fa69f8b31bce4e721b7184b7cc.png" alt="截图"></p><p><img src="9c73c211d856831d635ad1bf7e6512d3.png" alt="截图"></p><p>缺点：</p><ol><li>导入贴图时引入了检查meta文件操作，有增加一定的耗时；</li><li>检查时，对应的meta文件其实还没被unity改动（即格式修改还没被写进meta），能正常改动meta文件的资源也会被重新导入一次。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1、问题描述&quot;&gt;&lt;a href=&quot;#1、问题描述&quot; class=&quot;headerlink&quot; title=&quot;1、问题描述&quot;&gt;&lt;/a&gt;1、问题描述&lt;/h1&gt;&lt;p&gt;提交记录 7e9d6275da88a87dbd69e42f17f20174f4af5d9b&lt;/p&gt;
+&lt;p&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="Unity" scheme="https://yongliangmai.github.io/categories/Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://yongliangmai.github.io/tags/Unity/"/>
+    
+    <category term="资源管理" scheme="https://yongliangmai.github.io/tags/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>符号表解析崩溃日志</title>
+    <link href="https://yongliangmai.github.io/2021/03/09/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%A7%A3%E6%9E%90%E5%B4%A9%E6%BA%83%E6%97%A5%E5%BF%97/"/>
+    <id>https://yongliangmai.github.io/2021/03/09/%E7%AC%A6%E5%8F%B7%E8%A1%A8%E8%A7%A3%E6%9E%90%E5%B4%A9%E6%BA%83%E6%97%A5%E5%BF%97/</id>
+    <published>2021-03-09T12:52:32.000Z</published>
+    <updated>2021-03-09T13:07:04.312Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1、什么是符号表"><a href="#1、什么是符号表" class="headerlink" title="1、什么是符号表"></a>1、什么是符号表</h1><p>符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：<br>&lt;起始地址&gt; &lt;结束地址&gt; &lt;函数&gt; [&lt;文件名:行号&gt;]</p><p>就大概是这个这样的东西<br><img src="image2021-1-25_18-15-14.png"></p><h1 id="2、符号表的作用"><a href="#2、符号表的作用" class="headerlink" title="2、符号表的作用"></a>2、符号表的作用</h1><p>使用符号表可以对APP发生Crash的程序堆栈进行解析和还原，能为了能快速并准确地定位用户APP发生Crash的代码位置</p><p><strong>解析前的崩溃堆栈：</strong></p><p><img src="image2021-1-25_18-17-42.png"></p><p><strong>解析后：</strong></p><p><img src="image2021-1-25_18-17-53.png"></p><h1 id="3、上传符号表"><a href="#3、上传符号表" class="headerlink" title="3、上传符号表"></a>3、上传符号表</h1><h2 id="3-1-IOS"><a href="#3-1-IOS" class="headerlink" title="3.1 IOS"></a>3.1 IOS</h2><p>ios的符号表文件就是dSYMs文件夹</p><p>文件通常可以通过Xcode进行查看，Window -&gt; Organizer -&gt; Archives -&gt; 选择对应的Archives包 -&gt; Show in Finder -&gt; 选折对应的.xcarchive文件 -&gt; 显示包内容 -&gt; 打开dSYMs文件夹</p><p>找到打成zip，再手动上传bugly，就可以了</p><h2 id="3-2-安卓"><a href="#3-2-安卓" class="headerlink" title="3.2 安卓"></a>3.2 安卓</h2><p>下载bugly的工具</p><p><a href="https://bugly.qq.com/docs/release-notes/release-android-symboltool/?v=20200622202242">Android 符号表工具</a></p><p>阅读里面的使用指南符号表工具Android版-使用指南.pdf，（各个参数根据实际情况填）</p><h1 id="4、-本地解析崩溃日志"><a href="#4、-本地解析崩溃日志" class="headerlink" title="4、 本地解析崩溃日志"></a>4、 本地解析崩溃日志</h1><p><a href="https://www.jianshu.com/p/c23a2c22ec5a">IOS本地解析崩溃堆栈</a></p><p>安卓：命令行</p><p>“E:/android-ndk-r13b-windows-x86_64/android-ndk-r13b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-addr2line.exe” -f -C -e “F:/ProjectG/pjg-client/AndroidProj/StagingArea/symbols/armeabi-v7a/libunity.sym.so” 00576c98&amp;exit</p><p>（运行 arm-linux-androideabi-addr2line.exe， 参数 -f -C -e so路径  日志对应行的内存地址）<br>就会输出解析后的堆栈信息</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1、什么是符号表&quot;&gt;&lt;a href=&quot;#1、什么是符号表&quot; class=&quot;headerlink&quot; title=&quot;1、什么是符号表&quot;&gt;&lt;/a&gt;1、什么是符号表&lt;/h1&gt;&lt;p&gt;符号表是内存地址与函数名、文件名、行号的映射表。符号表元素如下所示：&lt;br&gt;&amp;lt;起始地址</summary>
+      
+    
+    
+    
+    <category term="其他" scheme="https://yongliangmai.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="符号表" scheme="https://yongliangmai.github.io/tags/%E7%AC%A6%E5%8F%B7%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity资源各种ID解析</title>
+    <link href="https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/"/>
+    <id>https://yongliangmai.github.io/2021/03/09/Unity%E8%B5%84%E6%BA%90%E5%90%84%E7%A7%8DID%E8%A7%A3%E6%9E%90/</id>
+    <published>2021-03-09T10:29:56.000Z</published>
+    <updated>2021-03-11T06:53:22.542Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="File-Guid（guid）"><a href="#File-Guid（guid）" class="headerlink" title="File Guid（guid）"></a>File Guid（guid）</h1><p>unity上，每个文件都会有一个File Guid（guid），记录在meta文件上，作为这个文件的唯一标识</p><p><img src="bf28b7ce15f50433d73930fcf6835e6f.png"></p><p>例如，如果一个资源引用了另一个外部资源，比如一个Prefab引用了其他脚本、纹理或Prefab等，则一定会标明引用资源文件的File GUID。</p><p><img src="34ee80be6d197331cf102dc5e2986261.png"></p><h1 id="Local-ID"><a href="#Local-ID" class="headerlink" title="Local ID"></a>Local ID</h1><p>Local ID表示的就是文件内部各对象之间的关系，打开一个*.Prefab文件可以很清晰的看到：</p><p><img src="f6dac319113ce7166d12242ea1e46b84.png"></p><p>一个对象通常是由一个或多个对象构成，每个记录在&amp;符号后面的数字都是一个Local ID，每一个Local ID也表示这<strong>它将来也会被实例化成一个对象</strong>。也就是说，当一个prefab文件要实例化成一个GameObject时，它会自动尝试获取其内部Local ID所指的那个对象。如果这个所指的对象当前还没有被实例化出来，那么Unity会自动<strong>实例化</strong>这个对象，如此递归，直到所有涉及的对象都被实例化。</p><br/><h1 id="Instance-ID"><a href="#Instance-ID" class="headerlink" title="Instance ID"></a>Instance ID</h1><p>Unity通过Instance ID，来获取或判断一个对象是否已经被加载完毕。Instance ID由File GUID和Local ID转换而成，可以简单理解成是记录了资源所在内存地址的写着数字的钥匙牌。</p><p>Unity会在项目启动后，创建并一直维护一张“映射表”，这张映射表记录的就是File GUID、Local ID以及由它们转换而成的Instance ID之间的关系，这样下次在请求资源时就可以快速的通过查看钥匙牌来获取资源了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;File-Guid（guid）&quot;&gt;&lt;a href=&quot;#File-Guid（guid）&quot; class=&quot;headerlink&quot; title=&quot;File Guid（guid）&quot;&gt;&lt;/a&gt;File Guid（guid）&lt;/h1&gt;&lt;p&gt;unity上，每个文件都会有一个Fi</summary>
+      
+    
+    
+    
+    <category term="Unity" scheme="https://yongliangmai.github.io/categories/Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://yongliangmai.github.io/tags/Unity/"/>
+    
+    <category term="资源管理" scheme="https://yongliangmai.github.io/tags/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo常见错误</title>
+    <link href="https://yongliangmai.github.io/2021/03/09/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
+    <id>https://yongliangmai.github.io/2021/03/09/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</id>
+    <published>2021-03-09T10:18:59.000Z</published>
+    <updated>2021-03-09T12:36:47.531Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1、can-not-read-a-block-mapping-entry"><a href="#1、can-not-read-a-block-mapping-entry" class="headerlink" title="1、can not read a block mapping entry"></a>1、can not read a block mapping entry</h1><p>md文件前面要有</p><p><img src="1.png"></p><p>这种属性，且设置属性后面要加空格</p><h1 id="2、Template-render-error-tag-name-expected"><a href="#2、Template-render-error-tag-name-expected" class="headerlink" title="2、Template render error: tag name expected"></a>2、Template render error: tag name expected</h1><p><code>&#123;%` 和 `%&#125;</code>被当成hexo模板中的标签，解析出错。<br>需用要 ` 符号把它包住</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1、can-not-read-a-block-mapping-entry&quot;&gt;&lt;a href=&quot;#1、can-not-read-a-block-mapping-entry&quot; class=&quot;headerlink&quot; title=&quot;1、can not read a blo</summary>
+      
+    
+    
+    
+    <category term="hexo" scheme="https://yongliangmai.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo常见错误" scheme="https://yongliangmai.github.io/tags/hexo%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FlappyBird设计</title>
+    <link href="https://yongliangmai.github.io/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://yongliangmai.github.io/2021/03/09/FlappyBird%E8%AE%BE%E8%AE%A1/</id>
+    <published>2021-03-09T10:08:52.000Z</published>
+    <updated>2021-03-09T12:35:38.257Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h1><p>经多次观察flappy bird游戏后得出：</p><ol><li> 有一个固定的重力，但下降有最大速度</li><li> 点击屏幕把Y速度变成一个向上的固定速度，不叠加</li><li> 飞到最高点时，把Y速度变成0</li><li> 地图固定速度向左移动，鸟的X坐标固定</li></ol><br/><h1 id="碰撞检测"><a href="#碰撞检测" class="headerlink" title="碰撞检测"></a>碰撞检测</h1><h2 id="鹄羹（鸟）"><a href="#鹄羹（鸟）" class="headerlink" title="鹄羹（鸟）"></a>鹄羹（鸟）</h2><p><img src="1.png"></p><p>加一些碰撞检查点，手动摆的。</p><br/><h2 id="与管道碰撞"><a href="#与管道碰撞" class="headerlink" title="与管道碰撞"></a>与管道碰撞</h2><p><img src="2.png"></p><p>取管道这5个顶点，使用 GameUtils.isInPolygon(ptlist,pt) 方法， 循环检测鸟的碰撞检查点。</p><p>（大致是这样，其实没这么短）</p><br/><h2 id="与得分道具碰撞"><a href="#与得分道具碰撞" class="headerlink" title="与得分道具碰撞"></a>与得分道具碰撞</h2><p><img src="3.png"></p><p>循环检测鸟的碰撞检查点，判断检查点与这圆心的距离是否小于半径。</p><br/><h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><p><img src="4.png"></p><p>在鹄羹（鸟）横坐标有重合的物体才检测碰撞</p><br/><h1 id="管道地图拼接"><a href="#管道地图拼接" class="headerlink" title="管道地图拼接"></a>管道地图拼接</h1><p>前提：地图要给策划配好</p><ol><li>策划配地图块</li><li>每一块地图块的右边缘距离屏幕个中心点一定距离（正数）时，开始加载下一张地图，并重置管道位置，重置加分道具。</li><li>每一块地图块的右边缘距离屏幕个中心点一定距离（负数）时，隐藏这一张地图</li><li>同一个地图块不能连续出现</li></ol><br/><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ol><li> 使用 UpdateBeat，调用lua的update去每帧处理事件。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;移动&quot;&gt;&lt;a href=&quot;#移动&quot; class=&quot;headerlink&quot; title=&quot;移动&quot;&gt;&lt;/a&gt;移动&lt;/h1&gt;&lt;p&gt;经多次观察flappy bird游戏后得出：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt; 有一个固定的重力，但下降有最大速度&lt;/li&gt;
+&lt;li&gt; 点击屏幕把</summary>
+      
+    
+    
+    
+    <category term="开发记录" scheme="https://yongliangmai.github.io/categories/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="小游戏开发" scheme="https://yongliangmai.github.io/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 教程</title>
+    <link href="https://yongliangmai.github.io/2021/03/09/hello-world/"/>
+    <id>https://yongliangmai.github.io/2021/03/09/hello-world/</id>
+    <published>2021-03-09T07:57:29.963Z</published>
+    <updated>2021-03-09T12:36:23.349Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
